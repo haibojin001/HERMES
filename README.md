@@ -1,7 +1,5 @@
 # HERMES: anonymous research code
 
-This tree contains the HERMES implementation and experiment entry points for the four benchmarks in the manuscript. It contains no author identity, credentials, benchmark task images, hidden tests, or claimed evaluation outputs. Keep the development and cluster bundle outside this directory when publishing it.
-
 HERMES activates task-relevant Dev-Primitives, edits persistent artifacts, executes task-visible checks, and uses Critic feedback for up to `B` revision rounds. `--max-iterations 4` means the paper default `B=3`.
 
 | Experiment | Entry point | Official evaluator |
