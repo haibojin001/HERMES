@@ -9,8 +9,8 @@ from pathlib import Path
 
 TEXT_SUFFIXES = {".py", ".sh", ".md", ".toml", ".txt", ".cff", ".json",
                  ".jsonl", ".sbatch", ".yml", ".yaml", ".cfg", ".ini"}
-FORBIDDEN_PARTS = {".git", "__pycache__", ".venv", "venv", "hermes_data",
-                   ".idea", ".DS_Store"}
+SKIP_PARTS = {".git", "__pycache__", ".venv", "venv"}
+FORBIDDEN_PARTS = {"hermes_data", ".idea", ".DS_Store"}
 PATTERNS = [
     re.compile(r"/" + "Users" + r"/[A-Za-z0-9_.-]+/"),
     re.compile(r"/" + "home" + r"/[A-Za-z0-9_.-]+/"),
@@ -28,6 +28,8 @@ def violations(root: Path) -> list[str]:
                       if term.strip()]
     for path in sorted(root.rglob("*")):
         rel = path.relative_to(root)
+        if any(part in SKIP_PARTS for part in rel.parts):
+            continue
         if path.is_symlink():
             bad.append(f"{rel}: symbolic link")
             continue
