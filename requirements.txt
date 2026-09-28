@@ -1,0 +1,9 @@
+# Harbor 0.23 needs litellm >=1.92; the SWE-bench harness uses swebench 4.x.
+# These are installation constraints, not evidence for a paper result.
+litellm>=1.92,<2
+datasets==4.8.5
+swebench==4.1.0
+
+# Only needed for the Bedrock backend (the frontier-model configuration).
+# --vllm and --ollama do not use it.
+boto3==1.43.18

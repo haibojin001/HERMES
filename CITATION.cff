@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+title: "HERMES: Harness Engineering for Software Engineering via Modular Executable Dev-Primitives"
+message: "If you use this software, please cite the accompanying anonymized manuscript."
+authors:
+  - name: "Anonymous HERMES Authors"
+type: software
+version: 0.2.0
+license: MIT
+abstract: >-
+  Anonymous HERMES implementation and experiment adapters for SWE-bench Verified,
+  SWE Refactor Bench, Terminal-Bench 4.0, and DevOps-Gym.
+keywords:
+  - software engineering agents
+  - large language models
+  - software engineering benchmarks

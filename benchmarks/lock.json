@@ -1,0 +1,26 @@
+{
+  "swe_refactor": {
+    "url": "https://github.com/Einsia/SWE-Refactor-Bench.git",
+    "ref": "0d5d7310e64970826ffbe53fb53a349114acd69c",
+    "commit": "0d5d7310e64970826ffbe53fb53a349114acd69c",
+    "harness": "harbor"
+  },
+  "terminal_bench": {
+    "url": "https://github.com/harbor-framework/terminal-bench.git",
+    "ref": "refs/tags/v4.0.0",
+    "commit": "452bf305c6daa62fc59061d22133a7cbc7c1572e",
+    "harness": "harbor"
+  },
+  "devops_gym": {
+    "url": "https://github.com/ucsb-mlsec/DevOps-Gym.git",
+    "ref": "9bbe3f0de632299faa9102b282ebc9ea4a516d67",
+    "commit": "9bbe3f0de632299faa9102b282ebc9ea4a516d67",
+    "harness": "terminal-bench-legacy"
+  },
+  "terminal_bench_legacy": {
+    "url": "https://github.com/laude-institute/terminal-bench.git",
+    "ref": "d28711d0da2675d0bb1d56de45ae5df6082438a3",
+    "commit": "d28711d0da2675d0bb1d56de45ae5df6082438a3",
+    "harness": "dependency-for-devops-gym"
+  }
+}

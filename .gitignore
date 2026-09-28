@@ -1,0 +1,25 @@
+# Everything the pipeline writes lives under HERMES_HOME (default ./hermes_data):
+# repository checkouts, the dataset dump, predictions, trajectories, eval output.
+hermes_data/
+
+# Trajectories committed on purpose live in results/; anything written in place
+# by a local run does not.
+/trajectories/
+/predictions*.jsonl
+/eval_results/
+/swebench_workdir/
+
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+.DS_Store
+.idea/
+.vscode/
+
+# Never commit credentials. The pipeline reads AWS keys from the environment.
+.env
+*.pem
+credentials
