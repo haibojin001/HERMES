@@ -17,7 +17,7 @@
 # Environment images are not built here: building all of them is hours of CPU and
 # ~200 GB, and it needs a Docker API socket. Run `scripts/build_env_images.py`
 # once, before this. Without images the solver does a single edit round and
-# reports resolved=false, which is not a HERMES number (docs/reproducibility.md).
+# reports resolved=false, which is not a HERMES number.
 source "$(dirname "$0")/_lib.sh"
 
 STAGES=${STAGES:-dataset,main,ablations,budget,report}

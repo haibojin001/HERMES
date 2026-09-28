@@ -16,9 +16,6 @@ execution order and each is labelled with the equation of the paper it realises:
     Stage 5  re-planning             Eq. 9   Pi' = PLANNER(q, R', Pi, phi)
     Stage 6  held-out evaluation             runs only after termination
 
-`docs/paper-to-code.md` maps every equation, table and appendix claim to the
-function that implements it.
-
 Usage:
     python -m hermes.pipeline --instance django__django-13512
     python -m hermes.pipeline --vllm Qwen/Qwen3-8B --max-iterations 3

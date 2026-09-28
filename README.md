@@ -11,7 +11,7 @@ HERMES activates task-relevant Dev-Primitives, edits persistent artifacts, execu
 | Terminal-Bench 4.0 | `experiments/terminal_bench_4/run_official.sh` | Harbor task verifier, five independent runs |
 | DevOps-Gym | `experiments/devops_gym/run_official.sh` for each of four categories | legacy Terminal-Bench `tb` verifier |
 
-The `run.sh` files under the last three experiment directories are for benchmark-provided task-visible **snapshot manifests**. They write patches and trajectories but do not themselves run official graders. Use `run_official.sh` for scored experiments. See [the experiment guide](docs/experiments.md) and [reproducibility notes](docs/reproducibility.md) before comparing scores with the paper.
+The `run.sh` files under the last three experiment directories are for benchmark-provided task-visible **snapshot manifests**. They write patches and trajectories but do not themselves run official graders. Use `run_official.sh` for scored experiments.
 
 ## Install and fetch
 
@@ -67,5 +67,3 @@ The manuscript's open-weight condition uses Ollama Qwen3-8B, 32K context, temper
 python -B -m unittest discover -s tests -q
 python scripts/check_anonymity.py
 ```
-
-The implementation and known limits are mapped in `docs/paper-to-code.md` and `docs/reproducibility.md`. Citation metadata is in `CITATION.cff`.

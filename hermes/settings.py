@@ -9,7 +9,7 @@ repository runs without editing source.
     HERMES_WORK_DIR       per-instance repository checkouts
     HERMES_DATASET        SWE-bench Verified as a JSON list of instance dicts
     HERMES_PREDICTIONS    where `model_patch` records are appended
-    HERMES_TRAJECTORIES   one directory per run, see docs/trajectory-format.md
+    HERMES_TRAJECTORIES   one directory per run
     HERMES_CONTAINER_CLI  `docker`, `finch` or `podman` (default: autodetect)
 """
 

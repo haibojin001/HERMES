@@ -46,9 +46,8 @@ def main() -> int:
     print(f"  {len(env_images)} SWE-bench images visible locally")
     if not env_images:
         print("  Without environment images the solver does one edit round and\n"
-              "  stops: no tests, no Critic, no re-planning, no grading. See\n"
-              "  docs/reproducibility.md. Build them with the SWE-bench harness\n"
-              "  before reporting any number.")
+              "  stops: no tests, no Critic, no re-planning, no grading. Build\n"
+              "  them with the SWE-bench harness before reporting any number.")
 
     print(f"work dir:     {settings.WORK_DIR}")
     print(f"trajectories: {settings.TRAJ_ROOT}")

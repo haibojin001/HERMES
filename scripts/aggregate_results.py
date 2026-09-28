@@ -242,8 +242,8 @@ def main() -> int:
                     help=f"trajectory root (default {settings.TRAJ_ROOT})")
     ap.add_argument("--price", default=None, metavar="IN,OUT",
                     help="USD per million prompt,completion tokens; adds a cost "
-                         "column. Read docs/reproducibility.md first: the "
-                         "recorder only counts calls that report usage.")
+                         "column. The recorder only counts calls that report "
+                         "usage.")
     ap.add_argument("--csv", type=Path, default=None,
                     help="also write the rows as CSV")
     ap.add_argument("--per-instance", action="store_true",

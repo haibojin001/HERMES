@@ -31,8 +31,7 @@
 # short call per candidate file and would dominate a cost column.
 #
 # On the cost column: `aggregate_results.py --price IN,OUT` prices the tokens the
-# trajectory recorded, and the recorder only counts calls that report usage. Read
-# docs/reproducibility.md before putting a dollar figure in a table.
+# trajectory recorded, and the recorder only counts calls that report usage.
 source "$(dirname "$0")/_lib.sh"
 
 DEFAULT_MODELS='qwen3_8b:--vllm Qwen/Qwen3-8B --concurrency 32
